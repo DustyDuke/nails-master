@@ -1,0 +1,245 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	text-align:justify;
+}
+.hat {
+	width: 100%;
+	height: 500px;
+	background: url("img/manikur.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+color: #fff;
+font-size: 38px;
+text-align: center;
+padding-top: 180px;
+padding-right: 20px;
+padding-left: 20px;
+margin-bottom: 30px;
+}
+main {
+	padding: 15px;
+}
+h2,
+h3 {
+	text-align: center;
+	margin-top: 30px;
+}
+h2 {
+	margin-bottom: 30px;
+}
+.order-button {
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+}
+.order-button > button {
+	background: linear-gradient( to top, rgba(255, 255, 255, 0.7), transparent);
+	background: -webkit-linear-gradient( to top, rgba(255, 255, 255, 0.7), transparent);
+	background: -moz-linear-gradient( to top, rgba(255, 255, 255, 0.7), transparent);
+	border-radius: 10px;
+	border: 3px solid #fff;
+	border-color: #fff;
+	color: #fff;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+	font-weight: bold;
+	padding: 5px 10px;
+	font-size: 28px;
+	cursor: pointer;
+}
+.order-button > button:hover {
+	background: linear-gradient( to top, rgba(255, 255, 255, 1), transparent);
+	background: -webkit-linear-gradient( to top, rgba(255, 255, 255, 1), transparent);
+	background: -moz-linear-gradient( to top, rgba(255, 255, 255, 1), transparent);
+}
+.order {
+	color: #fff;
+}
+.order-button > button:focus,
+.owl-nav button:focus,
+.order-button > button:active,
+.owl-nav button:active {
+	outline: none;
+}
+.close {
+	position: absolute;
+	right: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.thanks-window,
+.modal-window {
+	display: none;
+	position: fixed;
+	background-color: rgba( 0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	overflow: hidden;
+	outline: 0;
+	animation: fadeIn 1.2s ease-in-out;
+}
+.thanks-window {
+	background-color: rgba( 0, 0, 0, 0.9);
+}
+@keyframes fadeIn {
+ 0% {  opacity: 0; }
+ 100% {  opacity: 1; }
+}  
+.thanks-window h2 {
+	margin-top: 30vh ;
+}
+.feedback-form {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	padding: 0 20px;
+	margin-top: -webkit-calc(50vh - 300px);
+	text-align: center;
+	padding-bottom: 30px;
+	}
+.feedback-form h2 {
+	margin-top: 20px;}
+input[type="text"] {
+	font-size: 18px;
+	font-weight: 300;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0 1px 0 0 #fff;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	padding: 15px;
+	width: 95%;}
+input[type="text"]:hover {
+	color: #fff;
+	border: 1px solid #fff;
+	transform: scale(1.05);
+	transition: 0.4s;
+	border: 2px solid #fff;}
+input[type="text"]:focus {
+	outline: none;
+}
+.feedback-form .order-button {
+	width: 200px;
+}
+.order-button > button {
+	text-shadow: none;
+}
+footer {
+	 background: linear-gradient( to top, #EFCAD0, #fff);
+	background: -webkit-linear-gradient( to top, #EFCAD0, #fff);
+	background: -moz-linear-gradient( to top, #EFCAD0, #fff);
+}
+.footer {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 30px;
+}
+.col-1 {
+	flex: 1;
+}
+.contacts p {
+	text-align: center;
+}
+.footer a {
+	text-decoration: none;
+	color: #000;
+}
+.social {
+	position: relative;
+}
+.soc {
+	opacity: 0.7;
+}
+.soc::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+	background-position: -12px -3px;
+}
+.inst::before {
+left: 25%;
+}
+.fb::before {
+left: 45%;
+background-position: -110px -3px;
+}
+.vk::before {
+left: 65%;
+background-position: -207px -3px;
+}
+.soc:hover {
+	opacity: 1;
+}
+@media only screen and (max-width : 767px) {
+	.hat {
+	height: 450px;
+	}
+	h1 {
+		padding-top: 100px;
+	}
+.inst::before {
+left: 16%;
+transform: scale(0.8);
+}
+.fb::before {
+left: 40%;
+transform: scale(0.8);
+}
+.vk::before {
+transform: scale(0.8);
+}	
+}
+@media only screen and (max-width : 572px) {
+	.hat {
+	height: 400px;
+	}
+	h1 {
+		padding-top: 80px;
+	}
+	.footer {
+		padding-bottom: 100px;
+		flex-direction: column;
+		flex-wrap: wrap
+	}
+}
+@media only screen and (max-width : 480px) {
+	.hat {
+	height: 300px;
+	}
+	h1 {
+		padding-top: 50px;
+		font-size: 28px;
+	}
+	.feedback-form h2 {
+	margin-top: 30px;}
+.inst::before {
+left: 8%;
+}
+.fb::before {
+left: 38%;
+}
+.vk::before {
+left: 68%;
+}
+}

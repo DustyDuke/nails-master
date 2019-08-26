@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align:justify;
+	font-family: 'Gayathri', sans-serif;
 }
 .hat {
 	width: 100%;
@@ -21,7 +22,7 @@ padding-left: 20px;
 margin-bottom: 30px;
 }
 main {
-	padding: 15px;
+	padding: 15px 0;
 }
 h2,
 h3 {
@@ -30,6 +31,16 @@ h3 {
 }
 h2 {
 	margin-bottom: 30px;
+}
+ul {
+	padding-left: 0;
+}
+ul li {
+	list-style: none;
+}
+.fa {
+	margin: 10px 15px 0 10px;
+	color: #EFCAD0;
 }
 .order-button {
 	width: 250px;
@@ -139,11 +150,18 @@ input[type="text"]:focus {
 .order-button > button {
 	text-shadow: none;
 }
+.map iframe {
+	width: 100%;
+	height: 500px;
+	padding: 0;
+	margin: 0;
+}
 footer {
 	 background: linear-gradient( to top, #EFCAD0, #fff);
 	background: -webkit-linear-gradient( to top, #EFCAD0, #fff);
 	background: -moz-linear-gradient( to top, #EFCAD0, #fff);
 }
+.orders,
 .footer {
 	display: -webkit-box;
   display: -moz-box;
@@ -154,6 +172,9 @@ footer {
 }
 .col-1 {
 	flex: 1;
+}
+.orders > ul {
+	width: 50%;
 }
 .contacts p {
 	text-align: center;
@@ -198,6 +219,18 @@ background-position: -207px -3px;
 	h1 {
 		padding-top: 100px;
 	}
+	.orders {
+		flex-wrap: wrap;
+	}
+		.orders > ul {
+	width: 100%;
+}
+		.orders > ul:first-child {
+			margin-bottom: 0;
+		}
+		.orders > ul:last-child {
+			margin-top: 0;
+		}
 .inst::before {
 left: 16%;
 transform: scale(0.8);
@@ -217,6 +250,10 @@ transform: scale(0.8);
 	h1 {
 		padding-top: 80px;
 	}
+	
+	.map iframe {
+	height: 300px;
+	}
 	.footer {
 		padding-bottom: 100px;
 		flex-direction: column;
@@ -229,8 +266,9 @@ transform: scale(0.8);
 	}
 	h1 {
 		padding-top: 50px;
-		font-size: 28px;
+		font-size: 22px;
 	}
+
 	.feedback-form h2 {
 	margin-top: 30px;}
 .inst::before {

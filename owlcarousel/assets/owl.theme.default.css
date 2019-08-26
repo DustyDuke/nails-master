@@ -29,12 +29,12 @@
 	.owl-prev {
 		position: absolute;
   top: 40%;
-    left: -15px;
+    left: -5px;
 	}
 	.owl-next {
 		position: absolute;
   top: 40%;
-  right: -15px;
+  right: -5px;
 	}
 	@media only screen and (max-width : 767px) {
 		.owl-theme .owl-nav [class*='owl-'] {

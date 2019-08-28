@@ -82,7 +82,6 @@ $("#ajaxform").submit(function() {
 		 $('.orders ul').removeClass('last').addClass('first');
 	 }
 });
-
 $(window).one('scroll' , function(){
     scroll_pos = $(window).scrollTop() + $(window).height();
     element_pos = $('.examples').offset().top + $('.examples').height() ;
@@ -90,7 +89,7 @@ $(window).one('scroll' , function(){
 var items = $('.first > li');
 items.css({ 'left': '-700px'});
 for (var i = 0; i < items.length; i++) {
-  $(items[i]).delay(i * 400).animate({ transform: tronslateX(700)  }, 400)
+  $(items[i]).delay(i * 400).animate({ left: 0  }, 400)
 	};
 };
 });;

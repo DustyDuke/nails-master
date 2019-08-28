@@ -78,7 +78,6 @@ $("#ajaxform").submit(function() {
 
 	
 
-});
 $(window).one('scroll' , function(){
     scroll_pos = $(window).scrollTop() + $(window).height();
     element_pos = $('.examples').offset().top + $('.examples').height() ;

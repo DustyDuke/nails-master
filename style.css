@@ -37,6 +37,7 @@ ul {
 }
 ul li {
 	list-style: none;
+	position: relative;
 }
 .fa {
 	margin: 10px 15px 0 10px;

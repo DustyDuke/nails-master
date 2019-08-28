@@ -76,7 +76,12 @@ $("#ajaxform").submit(function() {
         return false;
     });
 
-	
+		$(document).ready(function() {
+	checkwidth = $(window).width();
+	 if (checkwidth < 767) {
+		 $('.orders ul').removeClass('last').addClass('first');
+	 }
+});
 
 $(window).one('scroll' , function(){
     scroll_pos = $(window).scrollTop() + $(window).height();

@@ -90,7 +90,7 @@ $(window).one('scroll' , function(){
 var items = $('.first > li');
 items.css({ 'left': '-600px'});
 for (var i = 0; i < items.length; i++) {
-  $(items[i]).delay(i * 400).animate({ left: 0  }, 400)
+  $(items[i]).delay(i * 400).css({ left: 0  }, 400)
 	};
 };
 });;

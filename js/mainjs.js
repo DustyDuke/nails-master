@@ -84,23 +84,23 @@ $("#ajaxform").submit(function() {
 });
 $(window).one('scroll' , function(){
     scroll_pos = $(window).scrollTop() + $(window).height();
-    element_pos = $('.examples').offset().top + $('.examples').height() ;
+    element_pos = $('.examples').offset().top + $('.orders').height() ;
     if (scroll_pos > element_pos) {
 var items = $('.first > li');
 items.css({ 'left': '-700px'});
 for (var i = 0; i < items.length; i++) {
-  $(items[i]).delay(i * 400).animate({ left: 0  }, 400)
+  $(items[i]).delay(i * 600).animate({ left: 0  }, 600)
 	};
 };
 });;
 $(window).one('scroll' , function(){
     scroll_pos = $(window).scrollTop() + $(window).height();
-    element_pos = $('.examples').offset().top + $('.examples').height() ;
+    element_pos = $('.examples').offset().top + $('.orders').height() ;
     if (scroll_pos > element_pos) {
 var items = $('.last > li');
 items.css({ 'right': '-700px'});
 for (var i = 0; i < items.length; i++) {
-  $(items[i]).delay(i * 400).animate({ right: 0 }, 400)
+  $(items[i]).delay(i * 600).animate({ right: 0 }, 600)
 	};
 };
 });

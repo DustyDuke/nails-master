@@ -87,7 +87,7 @@ $(window).one('scroll' , function(){
     element_pos = $('.examples').offset().top + $('.orders').height() ;
     if (scroll_pos > element_pos) {
 var items = $('.first > li');
-items.css({ 'left': '-700px'});
+items.css({ 'left': '-1500px'});
 for (var i = 0; i < items.length; i++) {
   $(items[i]).delay(i * 600).animate({ left: 0  }, 600)
 	};
@@ -98,7 +98,7 @@ $(window).one('scroll' , function(){
     element_pos = $('.examples').offset().top + $('.orders').height() ;
     if (scroll_pos > element_pos) {
 var items = $('.last > li');
-items.css({ 'right': '-700px'});
+items.css({ 'right': '-1500px'});
 for (var i = 0; i < items.length; i++) {
   $(items[i]).delay(i * 600).animate({ right: 0 }, 600)
 	};
